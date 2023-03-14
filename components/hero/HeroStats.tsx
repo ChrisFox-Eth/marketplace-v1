@@ -91,13 +91,13 @@ export const PercentageChange: FC<{ value: number | undefined | null }> = ({
 
   if (value < 1) {
     return (
-      <div className="text-sm text-[#FF3B3B]">{formatNumber(percentage)}%</div>
+      <div className="text-sm hidden text-[#FF3B3B]">{formatNumber(percentage)}%</div>
     )
   }
 
   if (value > 1) {
     return (
-      <div className="text-sm text-[#06C270]">+{formatNumber(percentage)}%</div>
+      <div className="text-sm hidden text-[#06C270]">+{formatNumber(percentage)}%</div>
     )
   }
 
